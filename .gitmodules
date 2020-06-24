@@ -10,3 +10,6 @@
 [submodule "external/capicxx-someip-runtime"]
 	path = external/capicxx-someip-runtime
 	url = https://github.com/nkh-lab/capicxx-someip-runtime.git
+[submodule "external/logger"]
+	path = external/logger
+	url = https://github.com/nkh-lab/logger.git
