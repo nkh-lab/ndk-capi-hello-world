@@ -22,6 +22,6 @@ macro(ndk_find_package_boost)
 
 endmacro()
 
-#add_subdirectory(external/boost-cmake)
+add_subdirectory(external/boost-cmake)
 #add_subdirectory(external/vsomeip)
 add_subdirectory(capi-hello-world/app/src/main/cpp)
