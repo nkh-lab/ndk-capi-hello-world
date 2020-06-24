@@ -13,3 +13,6 @@
 [submodule "external/logger"]
 	path = external/logger
 	url = https://github.com/nkh-lab/logger.git
+[submodule "external/genivi-capi-someip-examples"]
+	path = external/genivi-capi-someip-examples
+	url = https://github.com/nkh-lab/genivi-capi-someip-examples.git
