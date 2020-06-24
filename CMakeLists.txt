@@ -24,4 +24,5 @@ endmacro()
 
 add_subdirectory(external/boost-cmake)
 add_subdirectory(external/vsomeip)
+add_subdirectory(external/capicxx-core-runtime)
 add_subdirectory(capi-hello-world/app/src/main/cpp)
