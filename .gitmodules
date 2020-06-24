@@ -1,3 +1,6 @@
 [submodule "external/boost-cmake"]
 	path = external/boost-cmake
 	url = https://github.com/Orphis/boost-cmake.git
+[submodule "external/vsomeip"]
+	path = external/vsomeip
+	url = https://github.com/nkh-lab/vsomeip.git
