@@ -7,7 +7,8 @@ Android Studio example how to use GENIVI CommonAPI via SOME/IP between two app s
 
 ## Dependencies
 Git submodule projects:
-- vsomeip, capicxx-core-runtime and capicxx-someip-runtime: For now used forked projects from https://github.com/nkh-lab due to some fixes are required in origin GENIVI projects.
+- vsomeip 3.1.15.1: (https://github.com/GENIVI/vsomeip.git).
+- capicxx-core-runtime and capicxx-someip-runtime: For now used forked projects from https://github.com/nkh-lab due to some fixes are required in origin GENIVI projects.
 - boost-cmake: CMake adapted boost (https://github.com/Orphis/boost-cmake).
 - logger: For easy logging (https://github.com/nkh-lab/logger.git).
 - genivi-capi-someip-examples: Simple CommonAPI via SOME/IP example which supports Android (https://github.com/nkh-lab/genivi-capi-someip-examples.git).
