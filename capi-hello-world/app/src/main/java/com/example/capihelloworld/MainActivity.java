@@ -29,10 +29,10 @@ public class MainActivity extends AppCompatActivity {
         TextView tv = findViewById(R.id.sample_text);
         tv.setText(stringFromJNI());
 
+        initVsomeip();
+
         startService(new Intent(this, ServiceCommonApiSrv.class));
         startService(new Intent(this, ServiceCommonApiClt.class));
-
-        init_vsomeip();
     }
 
     /**
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public native String stringFromJNI();
 
-    private void init_vsomeip() {
+    private void initVsomeip() {
         File vsomeipBaseDir = new File(getCacheDir(), "vsomeip");
         vsomeipBaseDir.mkdir();
 
