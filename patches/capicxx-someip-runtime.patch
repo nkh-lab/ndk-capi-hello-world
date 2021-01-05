@@ -1,0 +1,20 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index ad72647..9c901b7 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -118,7 +118,7 @@ endforeach ()
+ if ("${USE_INSTALLED_COMMONAPI}" STREQUAL "ON")
+     FIND_PACKAGE(CommonAPI 3.2.0 REQUIRED CONFIG NO_CMAKE_PACKAGE_REGISTRY)
+ else()
+-    FIND_PACKAGE(CommonAPI 3.2.0 REQUIRED CONFIG NO_SYSTEM_ENVIRONMENT_PATH NO_CMAKE_SYSTEM_PATH)
++    FIND_PACKAGE(CommonAPI 3.2.0)
+ endif()
+ 
+ message(STATUS "CommonAPI_CONSIDERED_CONFIGS: ${CommonAPI_CONSIDERED_CONFIGS}")
+@@ -215,4 +215,6 @@ endif()
+ 
+ ##############################################################################
+ # maintainer-clean
++if(NOT ANDROID)
+ add_custom_target(maintainer-clean COMMAND rm -rf *)
++endif()

@@ -7,11 +7,12 @@ Android Studio example how to use GENIVI CommonAPI via SOME/IP between two app s
 
 ## Dependencies
 Git submodule projects:
-- vsomeip 3.1.15.1: (https://github.com/GENIVI/vsomeip.git).
-- capicxx-core-runtime and capicxx-someip-runtime: For now used forked projects from https://github.com/nkh-lab due to some fixes are required in origin GENIVI projects.
+- vsomeip 3.1.20.2 (https://github.com/GENIVI/vsomeip.git);
+- capicxx-core-runtime 3.2.0 + patches/capicxx-core-runtime.patch: (https://github.com/GENIVI/capicxx-core-runtime.git);
+- capicxx-someip-runtime 3.2.0 + patches/capicxx-someip-runtime.patch: (https://github.com/GENIVI/capicxx-someip-runtime.git)
 - boost-cmake: CMake adapted boost (https://github.com/Orphis/boost-cmake).
 - logger 1.0.0: For easy logging (https://github.com/nkh-lab/logger.git).
-- genivi-capi-someip-examples: Simple CommonAPI via SOME/IP example which supports Android (https://github.com/nkh-lab/genivi-capi-someip-examples.git).
+- genivi-capi-someip-examples 3.0.0: Simple CommonAPI via SOME/IP example which supports Android (https://github.com/nkh-lab/genivi-capi-someip-examples.git).
 
 ## Project setup
 1. Clone main git project:
@@ -21,6 +22,15 @@ git clone https://github.com/nkh-lab/ndk-capi-hello-world.git
 2. Clone submodule projects:
 ```
 git submodule update --init
+```
+3. Apply patches:
+```
+cd external/capicxx-core-runtime
+git apply ../../patches/capicxx-core-runtime.patch
+```
+```
+cd external/capicxx-someip-runtime
+git apply ../../patches/capicxx-someip-runtime.patch
 ```
 
 ## Open project in Android Studio

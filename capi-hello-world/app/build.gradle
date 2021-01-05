@@ -15,7 +15,7 @@ android {
         externalNativeBuild {
             cmake {
                 cppFlags ""
-                arguments "-DANDROID_STL=c++_shared", "-DLOGGER_BUILD_HEADER_LIB=ON"
+                arguments "-DANDROID_STL=c++_shared", "-DLOGGER_BUILD_HEADER_LIB=ON", "-DUSE_INSTALLED_COMMONAPI=OFF"
             }
         }
     }

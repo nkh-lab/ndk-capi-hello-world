@@ -6,10 +6,10 @@
 	url = https://github.com/GENIVI/vsomeip.git
 [submodule "external/capicxx-core-runtime"]
 	path = external/capicxx-core-runtime
-	url = https://github.com/nkh-lab/capicxx-core-runtime.git
+	url = https://github.com/GENIVI/capicxx-core-runtime.git
 [submodule "external/capicxx-someip-runtime"]
 	path = external/capicxx-someip-runtime
-	url = https://github.com/nkh-lab/capicxx-someip-runtime.git
+	url = https://github.com/GENIVI/capicxx-someip-runtime.git
 [submodule "external/logger"]
 	path = external/logger
 	url = https://github.com/nkh-lab/logger.git
